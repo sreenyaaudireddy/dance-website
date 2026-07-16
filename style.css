@@ -58,6 +58,17 @@ header{
 }
 
 .btn{
+  text-decoration:none;
+  background: #2A8C82;
+  color:white;
+  padding: 12px 22px;
+  border-radius:30px;
+  transition:.3s;
+}
+
+.btn:hover{
+  background: #206b64;
+}
   
 
 
