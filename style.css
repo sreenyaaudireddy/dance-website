@@ -116,7 +116,23 @@ header{
 .hero-btn:hover{
   background:#b28d3d;
 }
-  
+
+/*Sections*/
+
+section{
+  padding:80px 10%;
+}
+
+section h2{
+  font-family:'Cormorant Garamond', serif;
+  text-align:center;
+  font-size:2.8rem;
+  color:#2A8C82;
+  margin-bottom:30px;
+}
+
+/*Cards*/
+
 
 
 
