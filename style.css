@@ -236,6 +236,25 @@ footer {
   padding: 40px 20px;
 }
 
+footer hr{
+  margin:30px auto;
+  width: 80%;
+  border:none;
+  border-top:1px solid rgba(255,255,255,.2)
+}
+
+/*Scroll Animation */
+
+.hidden {
+  opacity:0;
+  transform:translateY(40px)
+  transition: all .8s ease;
+}
+
+.show {
+  opacity:1;
+  transform: translateY(0);
+}
 
 
 
