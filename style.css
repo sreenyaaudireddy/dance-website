@@ -198,6 +198,44 @@ section h2{
   transform:scale(1.03)
 }
 
+/*Testimonials*/
+
+.testimonial {
+  background:white;
+  padding: 30px;
+  margin:20px auto;
+  max-width: 700px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.08)
+}
+
+/* CTA */
+
+.cta {
+  text-align:center;
+  background: #8C6A4A;
+  color:white;
+}
+
+.cta h2 {
+  color:white;
+  margin-bottom:20px;
+}
+
+.cta p{
+  margin-bottom: 30px
+}
+
+/*Footer */
+
+footer {
+  background: #3d3025;
+  color:white;
+  text-align:center;
+  padding: 40px 20px;
+}
+
 
 
 
