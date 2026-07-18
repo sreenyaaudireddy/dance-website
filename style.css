@@ -166,6 +166,38 @@ section h2{
 
 /*Event*/
 
+.event {
+  background: #2A8C82;
+  color:white;
+  text-align:center;
+}
+
+.event h2{
+  color:white;
+}
+
+/*Gallery*/
+
+.gallery-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+}
+
+.gallery-box{
+  height:220px;
+  background:#ddd;
+  border-radius:15px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:.3s;
+  cursor:pointer;
+}
+
+.gallery-box:hover{
+  transform:scale(1.03)
+}
+
 
 
 
