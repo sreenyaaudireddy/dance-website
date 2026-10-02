@@ -4,15 +4,11 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact | Kuchipudi Dance Academy</title>
 
-    <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -20,7 +16,6 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-
 
 <body>
 
@@ -32,52 +27,24 @@
         <nav class="navbar">
 
             <div class="logo">
-
                 <h2>Kuchipudi Academy</h2>
-
             </div>
-
 
             <ul class="nav-links">
 
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
+                <li><a href="index.html">Home</a></li>
 
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
+                <li><a href="about.html">About</a></li>
 
-                <li>
-                    <a href="classes.html">
-                        Classes
-                    </a>
-                </li>
+                <li><a href="classes.html">Classes</a></li>
 
-                <li>
-                    <a href="gallery.html">
-                        Gallery
-                    </a>
-                </li>
+                <li><a href="gallery.html">Gallery</a></li>
 
-                <li>
-                    <a href="events.html">
-                        Events
-                    </a>
-                </li>
+                <li><a href="events.html">Events</a></li>
 
-                <li>
-                    <a href="contact.html" class="active">
-                        Contact
-                    </a>
-                </li>
+                <li><a href="contact.html" class="active">Contact</a></li>
 
             </ul>
-
 
             <a href="contact.html" class="btn">
                 Enroll Now
@@ -90,15 +57,14 @@
 
     <!-- ================= HERO ================= -->
 
-    <section class="hero" style="height:55vh;">
+    <section class="hero page-hero">
 
         <div class="hero-overlay">
 
             <h1>Get In Touch</h1>
 
             <p>
-                We'd love to hear from you and help you
-                find the right class.
+                We'd love to hear from you.
             </p>
 
         </div>
@@ -112,9 +78,7 @@
 
         <h2>Contact Us</h2>
 
-
         <div class="cards">
-
 
             <div class="card">
 
@@ -140,12 +104,14 @@
 
             <div class="card">
 
-                <h3>Location</h3>
+                <h3>Locations</h3>
 
                 <p>
-                    123 Dance Studio Lane
+                    Dawsonville
                     <br>
-                    Atlanta, GA
+                    Canton
+                    <br>
+                    Cumming
                 </p>
 
             </div>
@@ -161,10 +127,10 @@
 
         <h2>Interested in Joining?</h2>
 
-        <p style="max-width:750px; margin:0 auto 40px; text-align:center;">
+        <p class="center-text">
 
             Fill out the form below and we'll get in touch
-            with you about classes and enrollment.
+            with you about classes, locations, and schedules.
 
         </p>
 
@@ -172,13 +138,13 @@
         <form
             action="#"
             method="POST"
-            style="max-width:700px; margin:auto;"
+            class="contact-form"
         >
 
 
             <!-- NAME -->
 
-            <div style="margin-bottom:20px;">
+            <div class="form-group">
 
                 <label for="name">
                     Name
@@ -190,7 +156,6 @@
                     name="name"
                     placeholder="Your name"
                     required
-                    style="width:100%; padding:14px; margin-top:8px; border:1px solid #ddd; border-radius:8px;"
                 >
 
             </div>
@@ -198,7 +163,7 @@
 
             <!-- EMAIL -->
 
-            <div style="margin-bottom:20px;">
+            <div class="form-group">
 
                 <label for="email">
                     Email
@@ -210,7 +175,6 @@
                     name="email"
                     placeholder="you@example.com"
                     required
-                    style="width:100%; padding:14px; margin-top:8px; border:1px solid #ddd; border-radius:8px;"
                 >
 
             </div>
@@ -218,7 +182,7 @@
 
             <!-- PHONE -->
 
-            <div style="margin-bottom:20px;">
+            <div class="form-group">
 
                 <label for="phone">
                     Phone Number
@@ -229,15 +193,14 @@
                     id="phone"
                     name="phone"
                     placeholder="(123) 456-7890"
-                    style="width:100%; padding:14px; margin-top:8px; border:1px solid #ddd; border-radius:8px;"
                 >
 
             </div>
 
 
-            <!-- AGE -->
+            <!-- STUDENT AGE -->
 
-            <div style="margin-bottom:20px;">
+            <div class="form-group">
 
                 <label for="age">
                     Student's Age
@@ -248,42 +211,40 @@
                     id="age"
                     name="age"
                     placeholder="Age"
-                    min="1"
-                    max="100"
-                    style="width:100%; padding:14px; margin-top:8px; border:1px solid #ddd; border-radius:8px;"
+                    min="4"
+                    max="120"
                 >
 
             </div>
 
 
-            <!-- CLASS -->
+            <!-- LOCATION -->
 
-            <div style="margin-bottom:20px;">
+            <div class="form-group">
 
-                <label for="class">
-                    Class of Interest
+                <label for="location">
+                    Location of Interest
                 </label>
 
                 <select
-                    id="class"
-                    name="class"
-                    style="width:100%; padding:14px; margin-top:8px; border:1px solid #ddd; border-radius:8px;"
+                    id="location"
+                    name="location"
                 >
 
                     <option value="">
-                        Select a class
+                        Select a location
                     </option>
 
-                    <option value="beginner">
-                        Beginner
+                    <option value="dawsonville">
+                        Dawsonville
                     </option>
 
-                    <option value="intermediate">
-                        Intermediate
+                    <option value="canton">
+                        Canton
                     </option>
 
-                    <option value="advanced">
-                        Advanced
+                    <option value="cumming">
+                        Cumming
                     </option>
 
                 </select>
@@ -293,7 +254,7 @@
 
             <!-- MESSAGE -->
 
-            <div style="margin-bottom:25px;">
+            <div class="form-group">
 
                 <label for="message">
                     Message
@@ -304,7 +265,6 @@
                     name="message"
                     rows="6"
                     placeholder="Tell us a little about what you're looking for..."
-                    style="width:100%; padding:14px; margin-top:8px; border:1px solid #ddd; border-radius:8px; resize:vertical;"
                 ></textarea>
 
             </div>
@@ -314,8 +274,7 @@
 
             <button
                 type="submit"
-                class="btn"
-                style="border:none; cursor:pointer; font-family:inherit; font-size:1rem;"
+                class="btn form-button"
             >
                 Send Message
             </button>
@@ -332,14 +291,14 @@
 
         <h2>Follow Along</h2>
 
-        <p>
-            Follow us on social media to see our latest
-            performances, announcements, and class updates.
+        <p class="center-text">
+
+            Follow us on social media for class updates,
+            photos, performances, and announcements.
+
         </p>
 
-        <br>
-
-        <p>
+        <p class="social-links">
             Instagram &nbsp; • &nbsp;
             Facebook &nbsp; • &nbsp;
             YouTube
@@ -356,23 +315,15 @@
 
             <h3>Kuchipudi Dance Academy</h3>
 
-            <p>
-                Email: info@danceacademy.com
-            </p>
+            <p>Email: info@danceacademy.com</p>
 
-            <p>
-                Phone: (123) 456-7890
-            </p>
+            <p>Phone: (123) 456-7890</p>
 
-            <p>
-                Instagram • Facebook • YouTube
-            </p>
+            <p>Instagram • Facebook • YouTube</p>
 
         </div>
 
-
         <hr>
-
 
         <p class="copyright">
             © 2026 Kuchipudi Dance Academy. All Rights Reserved.
