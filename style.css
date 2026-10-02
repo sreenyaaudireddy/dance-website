@@ -511,3 +511,71 @@ footer p {
         padding: 25px 20px;
     }
 }
+
+/* =========================
+   CENTERED TEXT FIXES
+========================= */
+
+.section-heading {
+    text-align: center;
+}
+
+.section-heading h2,
+.section-heading p {
+    text-align: center;
+}
+
+.section-subtitle {
+    width: 100%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+}
+
+.card {
+    text-align: center !important;
+}
+
+.card h3,
+.card p,
+.card a {
+    text-align: center;
+}
+
+.recital-cards {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.recital-card {
+    align-items: center;
+    text-align: center !important;
+}
+
+.recital-card p {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+}
+
+.recital-card a {
+    margin-top: auto;
+    text-align: center;
+}
+
+.no-events {
+    text-align: center !important;
+}
+
+.no-events h3,
+.no-events p {
+    text-align: center !important;
+}
+
+.no-events p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
