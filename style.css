@@ -1,4 +1,41 @@
 /* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F6F2ED;
+    color: #5B4636;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    color: #5B4636;
+}
+
+a {
+    color: inherit;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+
+/* =========================
    NAVIGATION
 ========================= */
 
@@ -11,18 +48,18 @@ header {
 }
 
 nav {
-    max-width: 1250px;
+    max-width: 1400px;
     margin: auto;
-    padding: 16px 5%;
+    padding: 16px 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 .logo {
     font-family: "Cormorant Garamond", serif;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 700;
     color: #5B4636;
     text-decoration: none;
@@ -33,7 +70,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 22px;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -48,21 +85,29 @@ nav ul li a {
     text-decoration: none;
     color: #5B4636;
     font-size: 14px;
-    transition: 0.3s ease;
     white-space: nowrap;
+    transition: 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #2A8C82;
 }
 
-/* Enroll Now */
+
+/* =========================
+   ENROLL BUTTON
+========================= */
+
 .nav-enroll {
+    display: inline-block;
     background-color: #2A8C82;
     color: white !important;
-    padding: 9px 17px;
+    padding: 8px 16px;
     border-radius: 25px;
-    line-height: 1.2;
+    line-height: 1.3;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
 }
 
 .nav-enroll:hover {
@@ -70,24 +115,578 @@ nav ul li a:hover {
     color: white !important;
 }
 
+
 /* =========================
-   SECTION HEADING ALIGNMENT
+   HERO
 ========================= */
 
-section .section-heading {
-    width: 100%;
-    text-align: center !important;
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(91, 70, 54, 0.55),
+            rgba(42, 140, 130, 0.45)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
 }
 
-section .section-heading h2 {
-    width: 100%;
-    text-align: center !important;
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
 }
 
-section .section-heading p {
+.hero h1 {
+    font-size: clamp(48px, 7vw, 80px);
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: white;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    background-color: #2A8C82;
+    color: white;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5B4636;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #2A8C82;
+    color: #2A8C82;
+}
+
+.btn-outline:hover {
+    background-color: #2A8C82;
+    color: white;
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.section-heading {
     width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 48px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.section-heading p,
+.section-subtitle {
     max-width: 750px;
-    margin: 0 auto !important;
-    text-align: center !important;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* =========================
+   GENERAL TEXT
+========================= */
+
+.center-text {
+    text-align: center;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.card {
+    background-color: white;
+
+    padding: 35px 28px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card a {
+    margin-top: auto;
+    padding-top: 20px;
+
+    color: #2A8C82;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.card a:hover {
+    color: #5B4636;
+}
+
+
+/* =========================
+   LOCATION CARDS
+========================= */
+
+.locations-cards {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.location-card {
+    text-align: center;
+}
+
+.location-card h3 {
+    color: #5B4636;
+}
+
+
+/* =========================
+   INFORMATION SECTION
+========================= */
+
+.info-section {
+    background-color: #E7F2F0;
+    text-align: center;
+}
+
+.info-section > p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    aspect-ratio: 4 / 3;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
     display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   INSTRUCTOR
+========================= */
+
+.instructor-container {
+    max-width: 1000px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: minmax(250px, 350px) 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.instructor-image img {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.instructor-info {
+    text-align: left;
+}
+
+.instructor-info h3 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.instructor-info p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   EVENTS
+========================= */
+
+.no-events {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 45px 30px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.no-events h3 {
+    font-size: 32px;
+    margin-bottom: 12px;
+
+    text-align: center;
+}
+
+.no-events p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.recital-cards {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.recital-card {
+    text-align: center;
+}
+
+.recital-card h3,
+.recital-card p,
+.recital-card a {
+    text-align: center;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-info {
+    max-width: 1000px;
+
+    margin: 0 auto 50px;
+}
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d8d0c8;
+
+    border-radius: 8px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+}
+
+.form-group textarea {
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    background-color: #5B4636;
+
+    color: white;
+
+    text-align: center;
+}
+
+.cta h2 {
+    color: white;
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 650px;
+
+    margin: 0 auto 25px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #3F3025;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.show {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    nav {
+        padding: 15px 3%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .instructor-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .instructor-image {
+        max-width: 350px;
+
+        margin: 0 auto;
+    }
+
+    .instructor-info {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 38px;
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .nav-enroll {
+        padding: 7px 13px;
+        font-size: 12px;
+    }
 }
