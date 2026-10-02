@@ -579,3 +579,37 @@ footer p {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* =========================
+   CENTER ALL SECTION TEXT
+========================= */
+
+.section-heading {
+    text-align: center;
+}
+
+.section-heading h2 {
+    text-align: center;
+}
+
+.section-heading p {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center !important;
+}
+
+.section-subtitle {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center !important;
+}
+
+/* Center text inside informational cards */
+.card {
+    text-align: center;
+}
+
+.card h3,
+.card p {
+    text-align: center;
+}
