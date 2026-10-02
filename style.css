@@ -69,3 +69,25 @@ nav ul li a:hover {
     background-color: #5B4636;
     color: white !important;
 }
+
+/* =========================
+   SECTION HEADING ALIGNMENT
+========================= */
+
+section .section-heading {
+    width: 100%;
+    text-align: center !important;
+}
+
+section .section-heading h2 {
+    width: 100%;
+    text-align: center !important;
+}
+
+section .section-heading p {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto !important;
+    text-align: center !important;
+    display: block;
+}
