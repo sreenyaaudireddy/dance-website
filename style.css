@@ -377,49 +377,75 @@ nav ul li a:hover {
    GALLERY
 ========================= */
 
-/* Smaller, centered gallery pictures */
+
+/* ================= GALLERY LAYOUT ================= */
+
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 180px);
-    justify-content: center;
-    gap: 20px;
-    max-width: 100%;
-    margin: 0 auto;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1050px;
+    margin: 35px auto;
+    align-items: start;
 }
 
 .gallery-item {
-    width: 180px;
-    height: 140px;
+    width: 100%;
+    height: 230px;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: #E7F2F0;
 }
 
 .gallery-item img {
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: block;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 14px;
 }
 
-/* Smaller screens */
-@media (max-width: 650px) {
+/* Keep empty photo placeholders consistent */
+.photo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #7AC7BE;
+    background: linear-gradient(135deg, #E7F2F0, #F6F2ED);
+}
+
+.placeholder-content {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
     .gallery-grid {
-        grid-template-columns: repeat(2, minmax(0, 180px));
-        gap: 12px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
     }
 
     .gallery-item {
-        width: 100%;
-        height: 130px;
+        height: 200px;
     }
 }
 
-@media (max-width: 400px) {
+/* Phone */
+@media (max-width: 480px) {
     .gallery-grid {
-        grid-template-columns: 180px;
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+
+    .gallery-item {
+        height: 230px;
     }
 }
-
 
 /* =========================
    INSTRUCTOR
