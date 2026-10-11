@@ -783,3 +783,40 @@ footer p {
         font-size: 12px;
     }
 }
+
+/* Force gallery pictures into a centered grid */
+section .gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 280px)) !important;
+    justify-content: center !important;
+    align-items: start;
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+    margin: 35px auto;
+}
+
+section .gallery-grid .gallery-item {
+    width: 100% !important;
+    height: 210px !important;
+    margin: 0 !important;
+}
+
+section .gallery-grid .gallery-item img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
+
+@media (max-width: 900px) {
+    section .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 280px)) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    section .gallery-grid {
+        grid-template-columns: minmax(0, 320px) !important;
+    }
+}
