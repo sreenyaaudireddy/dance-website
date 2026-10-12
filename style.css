@@ -377,26 +377,28 @@ nav ul li a:hover {
    GALLERY
 ========================= */
 
-
 /* ================= GALLERY LAYOUT ================= */
 
 .gallery-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     width: 100%;
-    max-width: 1050px;
+    max-width: 1400px;
     margin: 35px auto;
-    align-items: start;
 }
 
 .gallery-item {
-    width: 100%;
-    height: 230px;
-    overflow: hidden;
-    border-radius: 14px;
+    flex: 0 1 200px;
+    width: 200px;
+    height: 160px;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    border-radius: 14px;
     background-color: #E7F2F0;
 }
 
@@ -409,7 +411,7 @@ nav ul li a:hover {
     border-radius: 14px;
 }
 
-/* Keep empty photo placeholders consistent */
+/* Photo placeholders */
 .photo-placeholder {
     display: flex;
     align-items: center;
@@ -419,31 +421,20 @@ nav ul li a:hover {
 }
 
 .placeholder-content {
-    padding: 15px;
+    padding: 12px;
     text-align: center;
 }
 
-/* Tablet */
-@media (max-width: 800px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
-    }
-
+/* Smaller screens */
+@media (max-width: 700px) {
     .gallery-item {
-        height: 200px;
+        flex-basis: 170px;
+        width: 170px;
+        height: 140px;
     }
-}
 
-/* Phone */
-@media (max-width: 480px) {
     .gallery-grid {
-        grid-template-columns: 1fr;
-        max-width: 350px;
-    }
-
-    .gallery-item {
-        height: 230px;
+        gap: 14px;
     }
 }
 
@@ -781,42 +772,5 @@ footer p {
         padding: 7px 13px;
 
         font-size: 12px;
-    }
-}
-
-/* Force gallery pictures into a centered grid */
-section .gallery-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 280px)) !important;
-    justify-content: center !important;
-    align-items: start;
-    gap: 24px;
-    width: 100%;
-    max-width: 100%;
-    margin: 35px auto;
-}
-
-section .gallery-grid .gallery-item {
-    width: 100% !important;
-    height: 210px !important;
-    margin: 0 !important;
-}
-
-section .gallery-grid .gallery-item img {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
-}
-
-@media (max-width: 900px) {
-    section .gallery-grid {
-        grid-template-columns: repeat(2, minmax(0, 280px)) !important;
-    }
-}
-
-@media (max-width: 600px) {
-    section .gallery-grid {
-        grid-template-columns: minmax(0, 320px) !important;
     }
 }
