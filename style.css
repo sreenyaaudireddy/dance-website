@@ -392,9 +392,9 @@ nav ul li a:hover {
 }
 
 .gallery-item {
-    flex: 0 1 200px;
-    width: 200px;
-    height: 160px;
+    flex: 0 1 240px;
+    width: 240px;
+    height: 190px;
     margin: 0;
     padding: 0;
     overflow: hidden;
