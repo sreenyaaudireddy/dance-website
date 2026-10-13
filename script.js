@@ -33,3 +33,25 @@ gallery.forEach(box => {
 window.addEventListener("load", () => {
   console.log("Sri Natyalaya Kuchipudi Dance Academy");
 });
+
+const contactForm = document.querySelector(".contact-form");
+const successMessage = document.getElementById("form-success");
+const responseFrame = document.getElementById("form-response");
+
+if (contactForm && successMessage && responseFrame) {
+    let formSubmitted = false;
+
+    contactForm.addEventListener("submit", function () {
+        formSubmitted = true;
+        successMessage.style.display = "none";
+    });
+
+    responseFrame.addEventListener("load", function () {
+        if (formSubmitted) {
+            successMessage.style.display = "block";
+            contactForm.reset();
+            formSubmitted = false;
+        }
+    });
+}
+
