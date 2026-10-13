@@ -828,3 +828,18 @@ footer p {
     }
 }
 
+
+.form-success {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 18px 24px;
+    text-align: center;
+    color: #245C50;
+    background-color: #E7F2F0;
+    border: 1px solid #7AC7BE;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+
