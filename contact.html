@@ -119,11 +119,14 @@
         </p>
 
 
-        <form
-            action="#"
-            method="POST"
-            class="contact-form"
-        >
+        <iframe name="form-response"
+        id="form-response"
+        style="display:none;"></iframe>
+
+<form action="https://script.google.com/macros/s/AKfycbxDjSKuVJHRavV-D3LM2oPGPEFKroAIMW-op6eHryC24tGkusm8ksiYIdl7y4rRBx4pVA/exec"
+      method="POST"
+      target="form-response"
+      class="contact-form">
 
 
             <!-- NAME -->
@@ -197,6 +200,7 @@
                     placeholder="Age"
                     min="4"
                     max="120"
+                    required
                 >
 
             </div>
@@ -213,6 +217,7 @@
                 <select
                     id="location"
                     name="location"
+                    required
                 >
 
                     <option value="">
