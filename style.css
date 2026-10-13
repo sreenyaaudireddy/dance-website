@@ -628,25 +628,23 @@ nav ul li a:hover {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
 
 footer {
-    background-color: #3F3025;
-
-    color: white;
-
+    background-color: #3F2D22;
+    color: #FFFFFF;
     text-align: center;
-
-    padding: 30px 20px;
+    padding: 45px 20px;
+    margin-top: 40px;
 }
 
-footer p {
+footer .copyright {
     margin: 0;
-
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
     text-align: center;
 }
+
 
 
 /* =========================
